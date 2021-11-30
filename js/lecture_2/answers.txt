@@ -1,0 +1,12 @@
+1) a=undefined;
+2) b=2;
+3) c=mistake;
+4) a=3;
+5) b=4;
+6) c=5;
+7) a=undefined;
+8) b=4;
+9) c=5;
+10) a=undefined;
+11) b=4;
+12) c=mistake;
