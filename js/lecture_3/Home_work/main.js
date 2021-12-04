@@ -1,9 +1,4 @@
 //Task 1.
-
-let a = 1;
-let b = 2;
-const c = 8;
-
 function makeSomeCoolStaff() {
   var c = 5;
 
@@ -24,10 +19,16 @@ function makeSomeCoolStaff() {
   console.log(b); //8) b = 4;
   console.log(c); //9) c = 5;
 }
+let a = 1;
+let b = 2;
+const c = 8;
+
+
 
 a = 7;
 
 makeSomeCoolStaff();
+
 
 console.log(a); //10) a = 3; (1)
 console.log(b); //11) b = 2; (4)
@@ -53,4 +54,4 @@ const lecture = {
   symbol: 'foo',
 }
 
-console.log(`We were studing ${lecture.bigInt} during last lecture`);
+console.log(`We were studying ${lecture.bigInt} during last lecture`);
