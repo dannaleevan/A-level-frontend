@@ -38,3 +38,19 @@ _String type_
 _Symbol type_
 
 _Objects_ (collections of properties)
+
+
+__Operators__
+JavaScript has the following types of operators. This section describes the operators and contains information about operator precedence.
+
+Assignment operators
+Comparison operators
+Arithmetic operators
+Bitwise operators
+Logical operators
+String operators
+Conditional (ternary) operator
+Comma operator
+Unary operators
+Relational operators
+

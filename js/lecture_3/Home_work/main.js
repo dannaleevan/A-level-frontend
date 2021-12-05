@@ -1,4 +1,9 @@
 //Task 1.
+
+let a = 1;
+let b = 2;
+const c = 8;
+
 function makeSomeCoolStaff() {
   var c = 5;
 
@@ -22,8 +27,6 @@ function makeSomeCoolStaff() {
 let a = 1;
 let b = 2;
 const c = 8;
-
-
 
 a = 7;
 
