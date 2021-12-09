@@ -50,4 +50,4 @@ searchSubstringIndex('Hello', 'you');
 console.log(searchSubstringIndex);
 
 
-
+//alert, prompt, confirm
