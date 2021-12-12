@@ -1,3 +1,4 @@
+/*
 function makeSomeCoolStaff() {
   b++;
 
@@ -39,15 +40,19 @@ console.log(a); // 16. a = 7; +
 console.log(b); // 17. b = 2; +
 console.log(c); // 18. c = 8; +
 
+*/
 //task 2
 
-const initialString = 'Hello, you';
+const initialString = 'But I must explain to you how all this mistaken idea.';
 
-function searchSubstringIndex (initialString, searchSubstring) {
-  return initialString.includes('Hello');
+function searchSubstringIndex(initialString, searchingSubstring) {
+  let result;
+  if (initialString.includes(searchingSubstring)) {
+    result = 'include '+ searchingSubstring;
+  } else {
+    result = ' didn\'t include ' + searchingSubstring;
+  };
+  return result;
 }
-searchSubstringIndex('Hello', 'you');
-console.log(searchSubstringIndex);
-
-
-//alert, prompt, confirm
+console.log(searchSubstringIndex(initialString, 'how'));
+  
