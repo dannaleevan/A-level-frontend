@@ -46,7 +46,7 @@ const name3 = (a, b) => a + b
 
 // Поиск по массиву
 
-//includes()
+//includes()  !!!
 
 //find()
 
@@ -66,12 +66,12 @@ console.log(resultIndex);
 
 //Checking arrays
 
-//some   // true     если хоть один элемент true
+//some   !!! // true     если хоть один элемент true
 
 // let arr = [7, 8];
     //let result = arr.some((element, index)) => element % 4 == 0);
 
-//every
+//every !!!
      //let result = arr.every((element, index)) => element < 10 == 0); //true
 
 
@@ -81,7 +81,7 @@ console.log(resultIndex);
 
 /*
 let a = [3, 5, 19];
-a.sort();
+a.sort();  !!!
 console.log(19, 3, 5)
 
 a.sort((el1, el2) => {
@@ -97,7 +97,7 @@ console.log(a); //3, 5, 19
 
 //most used
 
-//forEach()  - 
+//forEach()  -  !!!
 /*
 const arr = ['an', 'ba', 'cf'];
 
@@ -108,7 +108,7 @@ function printf(a, b, c) {
 arr.forEach((element, index)=> console.log (`a: ${element}, b: ${index}`));
 */
 
-//map()
+//map()  !!!
 
 // let arr = [1, 2];  //преображаем массив
 
@@ -121,7 +121,7 @@ arr.forEach((element, index)=> console.log (`a: ${element}, b: ${index}`));
 // const result = arr.map((element, index) => ({ name: element, id: index }));
 // console.log(result);
 
-//filter() возвращает толко не что подходят под условие
+//filter()     !!! возвращает толко не что подходят под условие
 
 //...вверху обект 
 
