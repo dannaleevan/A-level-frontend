@@ -54,3 +54,22 @@ Comma operator
 Unary operators
 Relational operators
 
+__Objects__
+
+**Obj Methods**
+
+Object.getOwnPropertyDescriptor(); 
+Object.defineProperty();
+Object.defineProperties();
+Object.getOwnPropertyDescriptor();
+Object.keys();
+Object.values();
+Object.assign();
+Object.freeze();
+Object.isFrozen();
+Object.preventExtensions();
+Object.isExtensible();
+
+**Object Prototype**
+Object.setPrototypeOf();
+Object.getPrototypeOf();
