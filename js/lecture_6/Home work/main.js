@@ -36,14 +36,16 @@ const user = {
 
 function returnTo() {
         let newString = user.toString();
-        console.log('String concatenation' + newString);
+        console.log('String concatenation: ' + newString);
 }
 returnTo();
 
-Object.defineProperty (user, 'education', {
-    set(value) {
-        this.description = 'middle';
-  }
+Object.defineProperty(user, 'education', {
+    value: 'middle'
 });
-user.education = 'middle';
-console.log(user.education);
+console.log(user);
+
+Object.defineProperties(user, {
+    value: 'middle'
+});
+console.log(user);
