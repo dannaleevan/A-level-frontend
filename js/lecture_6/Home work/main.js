@@ -1,5 +1,6 @@
 //Task 1
 
+// 1)
 function getMinValue(value1, value2, value3) {
     let result;
     if (value1 < value2) {
@@ -13,6 +14,15 @@ function getMinValue(value1, value2, value3) {
 }
 
 getMinValue(8, 2, 1);
+
+// 2)
+const arrValue = [2, 5, -3, 7, 9];
+let getMinValue = arrValue.reduce(function (x, y) {
+    return Math.min(x, y);
+});
+console.log(getMinValue);
+
+
 
 //Task 2
 
@@ -40,12 +50,25 @@ function returnTo() {
 }
 returnTo();
 
+const checkUser = user;
+console.log(checkUser.valueOf());
+
 Object.defineProperty(user, 'education', {
     value: 'middle'
 });
 console.log(user);
 
 Object.defineProperties(user, {
-    value: 'middle'
+    'name': {
+        value: 'Marta',
+        writable: false,
+        configurable: true,
+        enumerable: true
+    },
+    'age': {
+        value: 71,
+        writable: false
+    }
 });
 console.log(user);
+
