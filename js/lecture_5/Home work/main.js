@@ -45,14 +45,29 @@ console.log(c); // 18. c = 8; +
 
 const initialString = 'But I must explain to you how all this mistaken idea.';
 
-function searchSubstringIndex(initialString, searchingSubstring) {
-  let result;
-  if (initialString.includes(searchingSubstring)) {
-    result = 'include '+ searchingSubstring;
+// function searchSubstringIndex(initialString, searchingSubstring) {
+//   let result;
+//   if (initialString.includes(searchingSubstring)) {
+//     result = 'include '+ searchingSubstring;
+//   } else {
+//     result = ' didn\'t include ' + searchingSubstring;
+//   };
+//   return result;
+// }
+// console.log(searchSubstringIndex(initialString, 'how'));
+
+//task 3
+
+function searchSubstringAmount(initialString, searchingSubstring) {
+  let result2;
+  if ((initialString.match(/I/g) || []).length) {
+    result2 = 'I found ' + searchingSubstring;
   } else {
-    result = ' didn\'t include ' + searchingSubstring;
+    result2 = 'There is no ' + searchingSubstring;
   };
-  return result;
-}
-console.log(searchSubstringIndex(initialString, 'how'));
-  
+  return result2;
+};
+
+console.log((searchSubstringAmount(initialString, searchingSubstring)));
+
+//initialString.substring(39, 40))
