@@ -1,25 +1,19 @@
-__Array__
+//task 1
 
-/*function name(a, b) {
-    //
-    return a + b
+//1)
+const inputString = 'But I must explain to you how all this mistaken idea.';
+const inputString2 = inputString.toLowerCase();
+const findVowelsCount = inputString2 => Array.from(inputString2)
+  .filter(letter => 'aeiou'.includes(letter)).length;
+console.log(findVowelsCount(inputString2));
+
+
+//2)
+const inputString3 = 'But I must explain to you how all this mistaken idea.';
+function findVowelsCount2(inputString3) {
+  return inputString3.match(/[aeiou]/gi).length;
 }
+console.log(findVowelsCount2(inputString3));
 
-const name2 = (a, b) => {
-    //
-    return a + b
-}
-
-const name3 = (a, b) => a + b
-*/
-
-//Array method
-
-//toString(), join() - массив склеить в строку
-    //arr.join('.'); // '1.Jon.Kim'
-//
-
-let arr = [1, 2, 3, 4];
-console.log(arr.toString)
-
+//task 2
 
