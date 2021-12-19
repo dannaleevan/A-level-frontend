@@ -73,3 +73,50 @@ Object.isExtensible();
 **Object Prototype**
 Object.setPrototypeOf();
 Object.getPrototypeOf();
+
+**Function**
+
+*1.Function creating & running*
+      function aB(arg_1, arg_2, ...arg_N) {
+            function's body
+      }
+*2.Arguments*
+<!-- function as arguments -->
+      const numbers =[1,2,3];
+      function multiplyByTwo(element){
+            return element *2;
+      }
+      const newArray = numbers.map(multiplyByTwo);
+
+<!-- anonymous function  -->
+      const numbers =[1,2,3];
+      const newArray = numbers.map(function(element){
+            return element *2;
+      });
+<!-- unknown arguments -->
+      function getMinNum(...num){
+            return Math.min(...num);
+      }
+      console.log(getMinNum(1,2,3));
+      console.log(getMinNum(3,6,7));
+*3.Function return*
+      function getValue(a){
+            return a;
+      }
+      getValue(3); //3
+*4.Arrow functions*
+      let arrowFunc = (a,b) => {
+            <!-- a+b -->
+            return a+b;
+      }
+      arrowFunc(3,7);
+*5.Execution context*
+      keyword 'this';
+      let button = document.getElementByID('btn');
+      button.addEventListener('click', function(){
+            alert(this===button)}); 
+*6.Closures*
+      local scope:
+            -block
+            -functional;
+      global scope.
