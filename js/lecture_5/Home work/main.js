@@ -43,7 +43,7 @@ console.log(c); // 18. c = 8; +
 */
 //task 2
 
-const initialString = 'But I must explain to you how all this mistaken idea.';
+
 
 // function searchSubstringIndex(initialString, searchingSubstring) {
 //   let result;
@@ -58,16 +58,29 @@ const initialString = 'But I must explain to you how all this mistaken idea.';
 
 //task 3
 
-function searchSubstringAmount(initialString, searchingSubstring) {
-  let result2;
-  if ((initialString.match(/I/g) || []).length) {
-    result2 = 'I found ' + searchingSubstring;
-  } else {
-    result2 = 'There is no ' + searchingSubstring;
-  };
-  return result2;
-};
+// const initialString = 'But I must explain to you how all this mistaken idea.';
+// function searchSubstringAmount(initialString, searchingSubstring) {
+//   let result2;
+//   const count = (initialString.match(/I/gi) || []).length;
+//   if (count) {
+//     result2 = 'I found ' + searchingSubstring +' ' + count + 'times';
+//   } else {
+//     result2 = 'There is no ' + searchingSubstring;
+//   };
+//   return result2;
+// };
 
-console.log((searchSubstringAmount(initialString, searchingSubstring)));
+// console.log((searchSubstringAmount(initialString, )));
 
 //initialString.substring(39, 40))
+
+//Принимает аргумент регулярного выражения, он может вырезать все иссходные строки
+
+// const str = 'abcaa';
+// const arr = str.split('a');
+// const hhh = arr.length - 1;
+  
+  //arr.filter(function (letter) {
+  //return 'a'.includes();
+  
+// console.log(hhh);
