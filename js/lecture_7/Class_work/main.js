@@ -125,19 +125,26 @@ arr.forEach((element, index)=> console.log (`a: ${element}, b: ${index}`));
 
 //...вверху обект 
 
-const arr = [    //???
-    {
-    name: 'i',
-    age: 12,
-    isStudent: 'yes'
-    },
-    {
-    name: 'd',
-    isStudent: 'yes'
-    }
-];
+// const arr = [    //???
+//     {
+//     name: 'i',
+//     age: 12,
+//     isStudent: 'yes'
+//     },
+//     {
+//     name: 'd',
+//     isStudent: 'yes'
+//     }
+// ];
 
-const students = arr.filter((element) => element.isStudent);
-console.log(students);
+// const students = arr.filter((element) => element.isStudent);
+// console.log(students);
 
 //reduce()  //аккамулирует предыдущее значение  ???
+
+const arr = [23, 'fhfh', true, { dom: 'google' }];
+function one(first) {
+    let two = arr;
+    return two.length;
+}
+one(arr);
