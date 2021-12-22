@@ -1,27 +1,46 @@
+//Task 1
 const namesOfDays = {
     ru: ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
     en: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 }
 
-const getNameOfDay = (lang) => {
-    const getDay = [];
-    for (let i = 0; i < namesOfDays.length; i++) {
-        if (lang === 'ru') {
-            console.log(namesOfDays.ru);
-        }
-        else {
-            console.log(namesOfDays.en);
-        }
-    }
-    return getDay;
-        //.push({ Object.keys(namesOfDays)[day] });
+const getNameOfDay = (day, lang) => {
+    (lang === 'ru') ? namesOfDays.ru : namesOfDays.en;
 }
-console.log(getNameOfDay('ru'));
 
+console.log(getNameOfDay(namesOfDays.ru[3],'ru'));
 
-// namesOfDays[i][day]
-
+// Object.keys(namesOfDays)[day] 
 // $namesOfDays[ru]
-
 //console.log(namesOfDays.ru.indexOf('Понедельник'));
-// console.log(namesOfDays.ru);
+
+
+//Task 2
+
+// const citiesAndCountries = {
+//     Kyiv: 'Ukraine',
+//     Washington: 'USA',
+//     Odessa: 'Ukraine',
+//     Munich: 'Germany',
+//     Kharkiv: 'Ukraine',
+//     'New-York': 'USA',
+//     Amsterdam: 'Netherlands',
+//     Berlin: 'Germany',
+//     Chicago: 'USA',
+//     Lisabon: 'Portugal',
+//     Lviv: 'Ukraine',
+//     Humburg: 'Germany'
+// };
+
+// for (let cities in citiesAndCountries) {
+//     console.log(`cities: ${ Odessa`});
+// }  
+// //     for (let mounth in months) {
+// // //   console.log('Month name: ' + months[mounth]);
+// // //}
+// // }
+
+// // function getKeyByValue(object, value) {
+// //   return Object.keys(object).find(key => object[key] === value);
+// // }
+// // console.log(getKeyByValue(citiesAndCountries, 'USA'));
