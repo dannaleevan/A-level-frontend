@@ -17,30 +17,27 @@ console.log(getNameOfDay(namesOfDays.ru[3],'ru'));
 
 //Task 2
 
-// const citiesAndCountries = {
-//     Kyiv: 'Ukraine',
-//     Washington: 'USA',
-//     Odessa: 'Ukraine',
-//     Munich: 'Germany',
-//     Kharkiv: 'Ukraine',
-//     'New-York': 'USA',
-//     Amsterdam: 'Netherlands',
-//     Berlin: 'Germany',
-//     Chicago: 'USA',
-//     Lisabon: 'Portugal',
-//     Lviv: 'Ukraine',
-//     Humburg: 'Germany'
-// };
+const citiesAndCountries = {
+    Kyiv: 'Ukraine',
+    Washington: 'USA',
+    Odessa: 'Ukraine',
+    Munich: 'Germany',
+    Kharkiv: 'Ukraine',
+    'New-York': 'USA',
+    Amsterdam: 'Netherlands',
+    Berlin: 'Germany',
+    Chicago: 'USA',
+    Lisabon: 'Portugal',
+    Lviv: 'Ukraine',
+    Humburg: 'Germany'
+};
 
-// for (let cities in citiesAndCountries) {
-//     console.log(`cities: ${ Odessa`});
-// }  
-// //     for (let mounth in months) {
-// // //   console.log('Month name: ' + months[mounth]);
-// // //}
-// // }
+for (let cities in citiesAndCountries) {
+    console.log(`cities: ${ Odessa`});
+}  
 
-// // function getKeyByValue(object, value) {
-// //   return Object.keys(object).find(key => object[key] === value);
-// // }
-// // console.log(getKeyByValue(citiesAndCountries, 'USA'));
+
+unction getKeyByValue(object, value) {
+return Object.keys(object).find(key => object[key] === value);
+}
+console.log(getKeyByValue(citiesAndCountries, 'USA'));
