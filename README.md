@@ -40,19 +40,38 @@ _Symbol type_
 _Objects_ (collections of properties)
 
 
+
+__**Lecture 4. Operators & Type Coercion**__
+
 __Operators__
+
 JavaScript has the following types of operators. This section describes the operators and contains information about operator precedence.
 
-Assignment operators
-Comparison operators
-Arithmetic operators
-Bitwise operators
-Logical operators
+*Assignment operators*
+=, +=
+
+*Comparison operators* 
+===,!==>, <, >=, <=
+
+*Arithmetic operators*
++, -, *, /
+
+*Logical operators*
+
+Operator	Meaning	      Example	      How it works
+&&	       AND	      value1 && value2	      Returns true if both value1 and value2 evaluate to true.
+||	       OR	      value1 || value2	      Returns true if either value1 or value2 (or even both!) evaluates to true.
+!	       NOT	      !value1	            Returns the opposite of value1. If value1 is true, then !value1 is false.
+
 String operators
-Conditional (ternary) operator
-Comma operator
-Unary operators
-Relational operators
+
+*Conditional (ternary) operator*
+Условный (тернарный) оператор - единственный оператор в JavaScript, принимающий три операнда: condition - условие, за которым следует знак вопроса (?), затем выражение, которое выполняется, если условие true истинно, сопровождается двоеточием (:), и, наконец, выражение, которое выполняется, если условие false - ложно. Он часто используется в качестве укороченного варианта условного оператора if.
+
+function getFee(isMember) {
+  return (isMember ? '$2.00' : '$10.00');       //isMember - condition , true - 2$, false - 10$
+} console.log(getFee(true));                    // expected output: "$2.00"
+
 
 __Objects__
 
@@ -120,6 +139,47 @@ Object.getPrototypeOf();
             -block
             -functional;
       global scope.
+
+__if...else__
+
+<!-- Пример сложного когда if..else с несколькими вводными одновременно, когда нужно сделать два сравнения в одном условии -->
+var room = "billiards room";
+var suspect = "Mr. Parkes";   
+<!-- A suspect can be either of - Mr. Parkes, Ms. Van Cleve, Mrs. Sparr, or Mr. Kalehoff -->
+var weapon = ""; 
+
+if (room === 'ballroom') {
+    weapon = 'poison';
+    if(suspect==="Mr. Kalehoff") 
+        solved = true;
+}
+<!-- /* Еще вариант сравнения через оператор && И
+if (room === 'ballroom' && suspect==="Mr. Kalehoff") {
+    weapon = 'poison';
+    solved = true; 
+} -->
+
+else if (room === 'gallery') {
+    weapon = 'trophy';
+    if(suspect==="Ms. Van Cleve") 
+        solved = true;
+}
+else if (room === 'billiards room') {
+    weapon = 'pool stick';
+    if(suspect==="Mrs. Sparr") 
+        solved = true;
+} 
+else if (room === 'dining room') {
+    weapon = 'knife';
+    if(suspect==="Mr. Parkes") 
+        solved = true;
+}   
+
+if (solved) {
+    console.log(suspect + " did it in the "+ room +" with the "+weapon+"!");
+}
+
+
 
 __DOM__
 
