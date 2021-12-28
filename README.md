@@ -140,6 +140,16 @@ Object.getPrototypeOf();
             -functional;
       global scope.
 
+//Функция переписывает параметр с конца в начало reverse
+<!-- function reverseString(reverseMe) {
+    var reversed = '';
+    for (i = reverseMe.length - 1; i >= 0; i--){
+        reversed += reverseMe[i];
+    }
+    return reversed;
+}
+console.log(reverseString('Margaret')); -->
+
 __if...else__
 
 <!-- Пример сложного когда if..else с несколькими вводными одновременно, когда нужно сделать два сравнения в одном условии -->
