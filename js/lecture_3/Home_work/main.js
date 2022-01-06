@@ -13,7 +13,7 @@ function makeSomeCoolStaff() {
 
   if (true) {
     a = 3;
-    var b =4;
+    var b = 4;
 
     console.log(a); //4) a = 3;
     console.log(b); //5) b = 4;
@@ -24,14 +24,10 @@ function makeSomeCoolStaff() {
   console.log(b); //8) b = 4;
   console.log(c); //9) c = 5;
 }
-let a = 1;
-let b = 2;
-const c = 8;
 
 a = 7;
 
 makeSomeCoolStaff();
-
 
 console.log(a); //10) a = 3; (1)
 console.log(b); //11) b = 2; (4)
@@ -43,7 +39,7 @@ function greeting(name) {
   alert('Hello, ' + name + '! How are you?');
 }
 
-greeting("Daria");
+greeting('Daria');
 
 //Task 3. My lecture object
 
@@ -54,7 +50,8 @@ const lecture = {
   number: 3,
   bigInt: 9007199254740991n,
   string: 'Hi',
-  symbol: 'foo',
-}
+  symbol: 'foo'
+  // where is the method?
+};
 
 console.log(`We were studying ${lecture.bigInt} during last lecture`);
