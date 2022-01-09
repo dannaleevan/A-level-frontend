@@ -219,8 +219,7 @@ if (solved) {
 }
 
 
-
-__DOM__
+# Lecture 10. DOM #
 
 Интерфейсы веб API:
 Document object
@@ -332,78 +331,57 @@ __Style Page Content__
 
 Working with Browser Events
 
-*_monitorEvents(document)_*
->See an event отображает все активное, что происходит 
-*_unmonitorEvents(document)_*
->Скрывает предыдущее отолбражание
+**monitorEvents(document)** - See an event отображает все активное, что происходит 
+**unmonitorEvents(document)** - Скрывает предыдущее отолбражание
 
 ## Events types: ##
 * mouse events (click, dblclick, scroll, resize)
-* keyboard events(pressing and releasing key)
-* control elements events(focus / blur forms fields, form submit);
+* keyboard events (pressing and releasing key)
+* control elements events (focus / blur forms fields, form submit);
 
 
 ### EventTarget Interface methods ###
-* .addEventListener()
->< event - target >.addEventListener(<event-to-listen-for>, <function-to-run-when-an-event-happens>);     
-* .removeEventListener()
->убрать EventListener
-* .target.dispatchEvent()
->отправляет событие в общую систему событий        
-* .preventDefault()
->предотвратить поведение браузера по умолчании, нажимаем   на ссылку, браузер перезапускается
-* .stopPropagation()
->остановка запуска js bubling
+* **.addEventListener()** - < event - target >.addEventListener(<event-to-listen-for>, <function-to-run-when-an-event-happens>);     
+* **.removeEventListener()** - убрать EventListener
+* **.target.dispatchEvent()** - отправляет событие в общую систему событий        
+* **.preventDefault()** - предотвратить поведение браузера по умолчании, нажимаем   на ссылку, браузер перезапускается
+* **.stopPropagation()** - остановка запуска js bubling
 
 ### Mouth events ###           
-* **mousedown** - нажал мышку
-* mouseup - отпустил мышку
-* __click__
->щелчек мыши
-* dblclick
->двойное нажатие мыши
-* mousemove
->уходим с элемента
-* __mouseover__
->мыш заходит на элемент
-* __mouseleave__
->увели мышку с узла без баблинга, покидаем пределы пораграфа
-* mouseenter
->уходим с элемента но без баблинга
-* mouseout
->увели мышку с узла с баблингом
-* contextmenu
->нажатие на правую клавишу  по любому вызывается крнтектсное меню  
+* *mousedown* - нажал мышку
+* **mouseup** - отпустил мышку
+* ***click*** - щелчек мыши
+* **dblclick** - двойное нажатие мыши
+* **mousemove** - уходим с элемента
+* **mouseover** - мыш заходит на элемент
+* **mouseleave** - увели мышку с узла без баблинга, покидаем пределы пораграфа
+* **mouseenter** - уходим с элемента но без баблинга
+* **mouseout** - увели мышку с узла с баблингом
+* **contextmenu** - нажатие на правую клавишу  по любому вызывается крнтектсное меню  
 
->bold - часто исспользуются
-
->>command+d выделяет и меняет все одинаковые элементы
+>command+d выделяет и меняет все одинаковые элементы
 
 ### Keyboard Events ### 
-* keydown
-* keyup
-* altKey проверка нажати ли клавиша, в тот момент, когда наживали на клаве
+* keydown -
+* keyup - 
+* altKey - проверка нажати ли клавиша, в тот момент, когда наживали на клаве
 * code - один символ выводит 
 * cnrlKey - 
-* __key__
+* key -
 * location -
-* metaKey
-* repeat 
-* shiftKey
+* metaKey - 
+* repeat -
+* shiftKey -
 
 ### Document_events ###
 
-* DOMContentLoaded event
->>после загрузки дома ускоряет работу интерфейсов не дожидаясь прогрузки css
-* load event
->>завершение загрузки всего на странице
-* beforeunload event
->>когда пользователь закончил работу и если сохранился спрашиваем, хочет ли он уйти
-* unload
->пользователь почти ушел, но мы можем собрать статистику
+* **DOMContentLoaded event** - после загрузки дома ускоряет работу интерфейсов не дожидаясь прогрузки css
+* **load event** - завершение загрузки всего на странице
+* **beforeunload event** - когда пользователь закончил работу и если сохранился спрашиваем, хочет ли он уйти
+* **unload** - пользователь почти ушел, но мы можем собрать статистику
 
 
-*Чтоб JS записать вверху страницы и DOM все таки прогружился, можно сделать следущее*
+##### Чтоб JS записать вверху страницы и DOM все таки прогружился, можно сделать следущее #####
 
 <!DOCTYPE html>
 <html lang="en">
@@ -416,11 +394,8 @@ Working with Browser Events
     </script>
 
 
-*_performance.now()_*
->Testing Code Performanc, тест времени выполнения кода
+**performance.now()** - testing Code Performanc, тест времени выполнения кода
 
-*_reateDocumentFragment()_*
->метод который поможет без div добавить элемент в одночасье и съэкономить время загрузки, он будет только на 321 строке
+**reateDocumentFragment()** - метод который поможет без div добавить элемент в одночасье и съэкономить время загрузки, он будет только на 321 строке
 
-*_setTimeout()_*
->Оттерминование запуска функции 
+**setTimeout()** - Оттерминование запуска функции 
