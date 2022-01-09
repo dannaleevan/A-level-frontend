@@ -332,8 +332,10 @@ __Style Page Content__
 
 Working with Browser Events
 
-*_monitorEvents(document)_*         //See an event отображает все активное, что происходит 
-*_unmonitorEvents(document)_*       //Скрывает предыдущее отолбражание
+*_monitorEvents(document)_*
+>See an event отображает все активное, что происходит 
+*_unmonitorEvents(document)_*
+>Скрывает предыдущее отолбражание
 
 ## Events types: ##
 * mouse events (click, dblclick, scroll, resize)
@@ -343,27 +345,37 @@ Working with Browser Events
 
 ### EventTarget Interface methods ###
 * .addEventListener()
->>< event - target >.addEventListener(<event-to-listen-for>, <function-to-run-when-an-event-happens>);     
+>< event - target >.addEventListener(<event-to-listen-for>, <function-to-run-when-an-event-happens>);     
 * .removeEventListener()
->>убрать EventListener
+>убрать EventListener
 * .target.dispatchEvent()
->>отправляет событие в общую систему событий        
+>отправляет событие в общую систему событий        
 * .preventDefault()
->>предотвратить поведение браузера по умолчании, нажимаем   на ссылку, браузер перезапускается
+>предотвратить поведение браузера по умолчании, нажимаем   на ссылку, браузер перезапускается
 * .stopPropagation()
->>остановка запуска js bubling
+>остановка запуска js bubling
 
 ### Mouth events ###           
-* mousedown       //нажал мышку
-* mouseup         //отпустил мышку
-* __click__       //щелчек мыши
-* dblclick        //двойное нажатие мыши
-* mousemove       //уходим с элемента
-* __mouseover__   //мыш заходит на элемент
-* __mouseleave__  //увели мышку с узла без баблинга, покидаем пределы пораграфа
-* mouseenter      //уходим с элемента но без баблинга
-* mouseout        //увели мышку с узла с баблингом
-* contextmenu     //нажатие на правую клавишу  по любому вызывается крнтектсное меню  
+* mousedown
+>нажал мышку
+* mouseup]
+>отпустил мышку
+* __click__
+>щелчек мыши
+* dblclick
+>двойное нажатие мыши
+* mousemove
+>уходим с элемента
+* __mouseover__
+>мыш заходит на элемент
+* __mouseleave__
+>увели мышку с узла без баблинга, покидаем пределы пораграфа
+* mouseenter
+>уходим с элемента но без баблинга
+* mouseout
+>увели мышку с узла с баблингом
+* contextmenu
+>нажатие на правую клавишу  по любому вызывается крнтектсное меню  
 
 >bold - часто исспользуются
 
@@ -390,9 +402,8 @@ Working with Browser Events
 * beforeunload event
 >>когда пользователь закончил работу и если сохранился спрашиваем, хочет ли он уйти
 * unload
->>пользователь почти ушел, но мы можем собрать статистику
+>пользователь почти ушел, но мы можем собрать статистику
 
-***
 
 *Чтоб JS записать вверху страницы и DOM все таки прогружился, можно сделать следущее*
 
@@ -406,13 +417,12 @@ Working with Browser Events
       });
     </script>
 
-***
 
 *_performance.now()_*
->>Testing Code Performanc, тест времени выполнения кода
+>Testing Code Performanc, тест времени выполнения кода
 
 *_reateDocumentFragment()_*
->>метод который поможет без div добавить элемент в одночасье и съэкономить время загрузки, он будет только на 321 строке
+>метод который поможет без div добавить элемент в одночасье и съэкономить время загрузки, он будет только на 321 строке
 
 *_setTimeout()_*
->>Оттерминование запуска функции 
+>Оттерминование запуска функции 
