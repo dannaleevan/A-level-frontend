@@ -297,6 +297,7 @@ if (solved) {
 * **.firstElementChild** - точно выдасть первый элемент, наполненный контентом
 
 * **.parentElement** - Чтоб не вызывать первым аргументом родительский элемент, мы можем удалять элемнт по такой схеме
+
       const mainHeading = document.querySelector('h1');
       >вызвать элемент для удаления
       mainHeading.parentElement.removeChild(mainHeading);
