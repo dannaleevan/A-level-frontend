@@ -315,9 +315,10 @@ if (solved) {
       mainHeading.style;
       >проверка
 
-* **.cssText** - добавление многих стилей, название стилей как в CSS : font-size
-      const mainHeading = document.querySelector('h1');
-      mainHeading.style.cssText = 'color: blue; background-color: orange; font-size: 3.5em';
+* **.cssText** - добавление многих стилей, название стилей как в CSS : font-size;
+
+    const mainHeading = document.querySelector('h1');
+    mainHeading.style.cssText = 'color: blue; background-color: orange; font-size: 3.5em';
 
 * **.setAttribute()** - два аргумента (название атрибута, его содержимое)
       const mainHeading = document.querySelector('h1');
