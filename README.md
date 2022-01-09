@@ -299,9 +299,9 @@ if (solved) {
 * **.parentElement** - Чтоб не вызывать первым аргументом родительский элемент, мы можем удалять элемнт по такой схеме
 
       const mainHeading = document.querySelector('h1');
-      >вызвать элемент для удаления
+      //вызвать элемент для удаления
       mainHeading.parentElement.removeChild(mainHeading);
-      >название элемент для удаленич, обратится к его родителю per.elem. + название метода removeCh, (удалить этот элемент)
+      //название элемент для удаленич, обратится к его родителю per.elem. + название метода removeCh, (удалить этот элемент)
 
 * **.remove()**
       const mainHeading = document.querySelector('h1');
