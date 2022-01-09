@@ -122,7 +122,7 @@ exapmle();
 
 ***
 
-# Lecture 6. Function #
+# Lecture 8. Function #
 
 *1.Function creating & running*
       function aB(arg_1, arg_2, ...arg_N) {
@@ -179,44 +179,46 @@ function reverseString(reverseMe) {
 }
 console.log(reverseString('Margaret'));
 
+# Lecture 9. Conditions & Loops #
+
 __if...else__
+ 
+      >Пример сложного когда if..else с несколькими вводными одновременно, когда нужно сделать два сравнения в одном условии -->
+      var room = "billiards room";
+      var suspect = "Mr. Parkes";   
+      >A suspect can be either of - Mr. Parkes, Ms. Van Cleve, Mrs. Sparr, or Mr. Kalehoff -->
+      var weapon = ""; 
 
-<!-- Пример сложного когда if..else с несколькими вводными одновременно, когда нужно сделать два сравнения в одном условии -->
-var room = "billiards room";
-var suspect = "Mr. Parkes";   
-<!-- A suspect can be either of - Mr. Parkes, Ms. Van Cleve, Mrs. Sparr, or Mr. Kalehoff -->
-var weapon = ""; 
+      if (room === 'ballroom') {
+      weapon = 'poison';
+      if(suspect==="Mr. Kalehoff") 
+            solved = true;
+      }
+      Еще вариант сравнения через оператор && И
+      if (room === 'ballroom' && suspect==="Mr. Kalehoff") {
+      weapon = 'poison';
+      solved = true; 
+      } 
 
-if (room === 'ballroom') {
-    weapon = 'poison';
-    if(suspect==="Mr. Kalehoff") 
-        solved = true;
-}
-<!-- /* Еще вариант сравнения через оператор && И
-if (room === 'ballroom' && suspect==="Mr. Kalehoff") {
-    weapon = 'poison';
-    solved = true; 
-} -->
+      else if (room === 'gallery') {
+      weapon = 'trophy';
+      if(suspect==="Ms. Van Cleve") 
+            solved = true;
+      }
+      else if (room === 'billiards room') {
+      weapon = 'pool stick';
+      if(suspect==="Mrs. Sparr") 
+            solved = true;
+      } 
+      else if (room === 'dining room') {
+      weapon = 'knife';
+      if(suspect==="Mr. Parkes") 
+            solved = true;
+      }   
 
-else if (room === 'gallery') {
-    weapon = 'trophy';
-    if(suspect==="Ms. Van Cleve") 
-        solved = true;
-}
-else if (room === 'billiards room') {
-    weapon = 'pool stick';
-    if(suspect==="Mrs. Sparr") 
-        solved = true;
-} 
-else if (room === 'dining room') {
-    weapon = 'knife';
-    if(suspect==="Mr. Parkes") 
-        solved = true;
-}   
-
-if (solved) {
-    console.log(suspect + " did it in the "+ room +" with the "+weapon+"!");
-}
+      if (solved) {
+      console.log(suspect + " did it in the "+ room +" with the "+weapon+"!");
+      }
 
 ***
 
