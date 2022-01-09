@@ -1,5 +1,6 @@
 # A-level-frontend
 
+
 # Lecture 2 Variables in JS #
 
 ES5: var //var не имеет блочной области видимости
@@ -20,6 +21,8 @@ Example: let lectureNumber = 2;
 локальная или функциональная (переменная или функция, созданная в этой области видимости, может быть доступна только внутри неё);
 блочная область видимости (if ();)
 
+***
+
 # Lecture 3 JavaScript data types #
 
 Primitive values (immutable datum represented directly at the lowest level of the language)
@@ -33,6 +36,7 @@ _Symbol type_
 
 _Objects_ (collections of properties)
 
+***
 
 # Lecture 4. Operators & Type Coercion #
 
@@ -95,28 +99,30 @@ function exapmle (){
 }
 exapmle(); -->
 
+***
 
-# Lecture 6. __Objects__ #
+# Lecture 6. Objects #
 
 **Obj Methods**
-
-Object.getOwnPropertyDescriptor(); 
-Object.defineProperty();
-Object.defineProperties();
-Object.getOwnPropertyDescriptor();
-Object.keys();
-Object.values();
-Object.assign();
-Object.freeze();
-Object.isFrozen();
-Object.preventExtensions();
-Object.isExtensible();
+* Object.getOwnPropertyDescriptor(); 
+* Object.defineProperty();
+* Object.defineProperties();
+* Object.getOwnPropertyDescriptor();
+* Object.keys();
+* Object.values();
+* Object.assign();
+* Object.freeze();
+* Object.isFrozen();
+* Object.preventExtensions();
+* Object.isExtensible();
 
 **Object Prototype**
-Object.setPrototypeOf();
-Object.getPrototypeOf();
+* Object.setPrototypeOf();
+* Object.getPrototypeOf();
 
-**Function**
+***
+
+# Lecture 6. Function #
 
 *1.Function creating & running*
       function aB(arg_1, arg_2, ...arg_N) {
@@ -390,7 +396,7 @@ Working with Browser Events
 
 *Чтоб JS записать вверху страницы и DOM все таки прогружился, можно сделать следущее*
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/css/styles.css" />
@@ -398,7 +404,7 @@ Working with Browser Events
       document.addEventListener('DOMContentLoaded', function () {
           document.querySelector('footer').style.backgroundColor = 'purple';
       });
-    </script>
+    </script> -->
 
 ***
 
