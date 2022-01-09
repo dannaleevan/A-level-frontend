@@ -285,6 +285,7 @@ if (solved) {
 
 * **.removeChild()**          
 >требует вызывание родительского элемента и какой из элементов будем удалять
+
       <parent-element>.removeChild(<child-to-remove>);
       посмотреть .firstChild или .firstElementChild и дальше удалить первого ребенка
       const block = $0;
