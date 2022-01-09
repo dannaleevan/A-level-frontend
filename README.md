@@ -63,7 +63,24 @@ Operator	Meaning	      Example	      How it works
 ||	       OR	      value1 || value2	      Returns true if either value1 or value2 (or even both!) evaluates to true.
 !	       NOT	      !value1	            Returns the opposite of value1. If value1 is true, then !value1 is false.
 
-String operators
+<!-- var balance = 340.00;
+var checkBalance = true;
+var isActive = true;
+
+// your code goes here
+if (checkBalance === true){
+    if (isActive===true && balance>0) {
+        console.log("Your balance is $" + balance.toFixed(2) +".");
+    } else if (isActive===true && balance===0){
+        console.log("Your account is empty.");    
+    } else if (isActive===true && balance<0){
+        console.log("Your balance is negative. Please contact bank.");
+    } else if (isActive===false){
+        console.log("Your account is no longer active."); 
+    }
+} else {
+    console.log("Thank you have a nice day!");
+}-->
 
 *Conditional (ternary) operator*
 Условный (тернарный) оператор - единственный оператор в JavaScript, принимающий три операнда: condition - условие, за которым следует знак вопроса (?), затем выражение, которое выполняется, если условие true истинно, сопровождается двоеточием (:), и, наконец, выражение, которое выполняется, если условие false - ложно. Он часто используется в качестве укороченного варианта условного оператора if.
@@ -71,6 +88,19 @@ String operators
 function getFee(isMember) {
   return (isMember ? '$2.00' : '$10.00');       //isMember - condition , true - 2$, false - 10$
 } console.log(getFee(true));                    // expected output: "$2.00"
+
+<!-- var flavor = "chocolate";
+var vessel = "bowl";
+var toppings = "sprinkles";
+
+// Add your code here
+
+function exapmle (){
+ return ((flavor === "vanilla" || "chocolate") && 
+(vessel === "cone" || "bowl") && 
+(toppings === "sprinkles" || "peanuts")) ? console.log ("I'd like two scoops of " + flavor + "ice cream in a " + vessel + "with " + toppings + ".") : console.log('I don\' want an icecreme');
+}
+exapmle(); -->
 
 
 __Objects__
@@ -299,3 +329,91 @@ __Style Page Content__
                         .toggle() - to add the class if it doesn't exists or remove it from the list if it does already exist
                         .contains() - returns a boolean based on if the class exists in the list or not
 
+# DOM_part_2 #
+
+Working with Browser Events
+
+*_monitorEvents(document)_*         //See an event отображает все активное, что происходит 
+*_unmonitorEvents(document)_*       //Скрывает предыдущее отолбражание
+
+## Events types: ##
+* mouse events (click, dblclick, scroll, resize)
+* keyboard events(pressing and releasing key)
+* control elements events(focus / blur forms fields, form submit);
+
+
+### EventTarget Interface methods ###
+* .addEventListener()
+>>< event - target >.addEventListener(<event-to-listen-for>, <function-to-run-when-an-event-happens>);     
+* .removeEventListener()
+>>убрать EventListener
+* .target.dispatchEvent()
+>>отправляет событие в общую систему событий        
+* .preventDefault()
+>>предотвратить поведение браузера по умолчании, нажимаем   на ссылку, браузер перезапускается
+* .stopPropagation()
+>>остановка запуска js bubling
+
+### Mouth events ###           
+* mousedown       //нажал мышку
+* mouseup         //отпустил мышку
+* __click__       //щелчек мыши
+* dblclick        //двойное нажатие мыши
+* mousemove       //уходим с элемента
+* __mouseover__   //мыш заходит на элемент
+* __mouseleave__  //увели мышку с узла без баблинга, покидаем пределы пораграфа
+* mouseenter      //уходим с элемента но без баблинга
+* mouseout        //увели мышку с узла с баблингом
+* contextmenu     //нажатие на правую клавишу  по любому вызывается крнтектсное меню  
+
+>bold - часто исспользуются
+
+>>command+d выделяет и меняет все одинаковые элементы
+
+### Keyboard Events ### 
+* keydown
+* keyup
+* altKey проверка нажати ли клавиша, в тот момент, когда наживали на клаве
+* code - один символ выводит 
+* cnrlKey - 
+* __key__
+* location -
+* metaKey
+* repeat 
+* shiftKey
+
+### Document_events ###
+
+* DOMContentLoaded event
+>>после загрузки дома ускоряет работу интерфейсов не дожидаясь прогрузки css
+* load event
+>>завершение загрузки всего на странице
+* beforeunload event
+>>когда пользователь закончил работу и если сохранился спрашиваем, хочет ли он уйти
+* unload
+>>пользователь почти ушел, но мы можем собрать статистику
+
+***
+
+*Чтоб JS записать вверху страницы и DOM все таки прогружился, можно сделать следущее*
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          document.querySelector('footer').style.backgroundColor = 'purple';
+      });
+    </script>
+
+***
+
+*_performance.now()_*
+>>Testing Code Performanc, тест времени выполнения кода
+
+*_reateDocumentFragment()_*
+>>метод который поможет без div добавить элемент в одночасье и съэкономить время загрузки, он будет только на 321 строке
+
+*_setTimeout()_*
+>>Оттерминование запуска функции 
