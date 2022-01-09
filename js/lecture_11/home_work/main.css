@@ -57,9 +57,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 .blue{
-    color: #fff; 
-    border-color: #fff;
-    background-color: navy;
+    color: navy;
+    font-size: 50px;
 }
 
 .tour-btn{
