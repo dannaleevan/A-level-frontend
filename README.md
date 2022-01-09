@@ -310,12 +310,13 @@ if (solved) {
 
 ### Style Page Content ###
 
-* **.style.<prop>** - добавление одного стиля
+* **.style.property** - добавление одного стиля
+
       const mainHeading = document.querySelector('h1');
       mainHeading.style.color = 'red' ('15px');
-      >fontSize - название стилей без черточки
       mainHeading.style;
-      >проверка
+
+>fontSize - название стилей без черточки
 
 * **.cssText** - добавление многих стилей, название стилей как в CSS : font-size;
 
