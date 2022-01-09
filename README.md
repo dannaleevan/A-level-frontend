@@ -1,10 +1,6 @@
 # A-level-frontend
 
-**Lecture 2 exercise 2**
-
-Compiler - переводчик для языков программирования...
-
-**Variables in JS:**
+# Lecture 2 Variables in JS #
 
 ES5: var //var не имеет блочной области видимости
 ES6:  let
@@ -24,9 +20,7 @@ Example: let lectureNumber = 2;
 локальная или функциональная (переменная или функция, созданная в этой области видимости, может быть доступна только внутри неё);
 блочная область видимости (if ();)
 
-**Lecture 3**
-
-**JavaScript data types**
+# Lecture 3 JavaScript data types #
 
 Primitive values (immutable datum represented directly at the lowest level of the language)
 _Boolean type_
@@ -40,8 +34,7 @@ _Symbol type_
 _Objects_ (collections of properties)
 
 
-
-__**Lecture 4. Operators & Type Coercion**__
+# Lecture 4. Operators & Type Coercion #
 
 __Operators__
 
@@ -103,7 +96,7 @@ function exapmle (){
 exapmle(); -->
 
 
-__Objects__
+# Lecture 6. __Objects__ #
 
 **Obj Methods**
 
