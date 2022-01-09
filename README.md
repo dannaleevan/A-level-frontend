@@ -333,14 +333,12 @@ if (solved) {
 >присвоить стить след. соседу
 
 * **.className** - get можем посмотреть наличие классов элемента
+
       const listOfClasses = mainHeading.className;
-      >выдаст string
       const arrayOfClasses = listOfClasses.split(' ');
-      >можно его перевернуть в array разделя
-      >>мы можем теперь работать с ним как с array : for, .push, .pop
-      >set className:
       mainHeading.className = "im-the-new-class";
-      >название нового класса
+
+>1.выдаст string, название нового класса 2.можно его перевернуть в array разделя 2.мы можем теперь работать с ним как с array : for, .push, .pop 3.set className:
 
 * **.classList** - получим DomTokenList - коллекция элементов, с которой можем работать
 >blaBla.classList.add('');
