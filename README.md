@@ -352,7 +352,7 @@ __if...else__
 
 ***
 
-# DOM_part_2 #
+# Lecture 11. DOM_part_2 #
 
 Working with Browser Events
 
