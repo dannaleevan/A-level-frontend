@@ -60,7 +60,7 @@ Operator	Meaning	      Example	      How it works
 ||	       OR	      value1 || value2	      Returns true if either value1 or value2 (or even both!) evaluates to true.
 !	       NOT	      !value1	            Returns the opposite of value1. If value1 is true, then !value1 is false.
 
-<!-- var balance = 340.00;
+var balance = 340.00;
 var checkBalance = true;
 var isActive = true;
 
@@ -77,7 +77,7 @@ if (checkBalance === true){
     }
 } else {
     console.log("Thank you have a nice day!");
-}-->
+}
 
 *Conditional (ternary) operator*
 Условный (тернарный) оператор - единственный оператор в JavaScript, принимающий три операнда: condition - условие, за которым следует знак вопроса (?), затем выражение, которое выполняется, если условие true истинно, сопровождается двоеточием (:), и, наконец, выражение, которое выполняется, если условие false - ложно. Он часто используется в качестве укороченного варианта условного оператора if.
@@ -86,7 +86,7 @@ function getFee(isMember) {
   return (isMember ? '$2.00' : '$10.00');       //isMember - condition , true - 2$, false - 10$
 } console.log(getFee(true));                    // expected output: "$2.00"
 
-<!-- var flavor = "chocolate";
+var flavor = "chocolate";
 var vessel = "bowl";
 var toppings = "sprinkles";
 
@@ -97,7 +97,7 @@ function exapmle (){
 (vessel === "cone" || "bowl") && 
 (toppings === "sprinkles" || "peanuts")) ? console.log ("I'd like two scoops of " + flavor + "ice cream in a " + vessel + "with " + toppings + ".") : console.log('I don\' want an icecreme');
 }
-exapmle(); -->
+exapmle();
 
 ***
 
@@ -170,14 +170,14 @@ exapmle(); -->
       global scope.
 
 //Функция переписывает параметр с конца в начало reverse
-<!-- function reverseString(reverseMe) {
+function reverseString(reverseMe) {
     var reversed = '';
     for (i = reverseMe.length - 1; i >= 0; i--){
         reversed += reverseMe[i];
     }
     return reversed;
 }
-console.log(reverseString('Margaret')); -->
+console.log(reverseString('Margaret'));
 
 __if...else__
 
@@ -396,7 +396,7 @@ Working with Browser Events
 
 *Чтоб JS записать вверху страницы и DOM все таки прогружился, можно сделать следущее*
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/css/styles.css" />
@@ -404,7 +404,7 @@ Working with Browser Events
       document.addEventListener('DOMContentLoaded', function () {
           document.querySelector('footer').style.backgroundColor = 'purple';
       });
-    </script> -->
+    </script>
 
 ***
 
