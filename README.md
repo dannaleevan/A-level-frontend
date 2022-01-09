@@ -243,14 +243,15 @@ if (solved) {
 
 
 ### Document object ###
->Add New Page Content
+>>>Add New Page Content
 
-* **document.createElement('a');** - DOM method в () пишем тег, который создаем, но не отображаем, дальше добавляем контент 
-      с помошью  .innerHTML:
+* **document.createElement('a');** - DOM method в () пишем тег, который создаем, но не отображаем, дальше добавляем контент с помошью  .innerHTML:
+     
       const addLink = document.createElement('a'); 
       ddLink.innerHTML = 'href = 'https://developer.mozilla.org';
 
 * **.appendChild();** - 'прикреплять', добавляем содержимое в document.createElement('div') в конце;
+
       const newSpan = document.createElement('span');
       >reate a brand new <span> element
       newSpan.textContent = 'BlaBla';
@@ -338,10 +339,10 @@ if (solved) {
       const arrayOfClasses = listOfClasses.split(' ');
       mainHeading.className = "im-the-new-class";
 
->1.выдаст string, название нового класса 2.можно его перевернуть в array разделя 2.мы можем теперь работать с ним как с array : for, .push, .pop 3.set className:
+>>>>1.выдаст string, название нового класса 2.можно его перевернуть в array разделя 2.мы можем теперь работать с ним как с array : for, .push, .pop 3.set className:
 
 * **.classList** - получим DomTokenList - коллекция элементов, с которой можем работать
->blaBla.classList.add('');
+>>>>blaBla.classList.add('');
  - .add() - to add a class to the list
  - .remove() - to remove a class from the list
  - .toggle() - to add the class if it doesn't exists or remove it from the list if it does already exist
