@@ -320,16 +320,17 @@ if (solved) {
 
 * **.cssText** - добавление многих стилей, название стилей как в CSS : font-size;
 
-    const mainHeading = document.querySelector('h1');
-    mainHeading.style.cssText = 'color: blue; background-color: orange; font-size: 3.5em';
+      const mainHeading = document.querySelector('h1');
+      mainHeading.style.cssText = 'color: blue; background-color: orange; font-size: 3.5em';
 
 * **.setAttribute()** - два аргумента (название атрибута, его содержимое)
+
       const mainHeading = document.querySelector('h1');
       mainHeading.setAttribute('style', 'color: blue; background-color: orange; font-size: 3.5em;');
       mainHeading.setAttribute('id', 'heading-sibling');
-      >добавить можно любой атрибут
       mainHeading.nextElementSibling.style.backgroundColor = 'red';
-      >присвоить стить след. соседу
+
+>присвоить стить след. соседу
 
 * **.className** - get можем посмотреть наличие классов элемента
       const listOfClasses = mainHeading.className;
