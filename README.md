@@ -356,10 +356,8 @@ Working with Browser Events
 >остановка запуска js bubling
 
 ### Mouth events ###           
-* mousedown
->нажал мышку
-* mouseup]
->отпустил мышку
+* **mousedown** - нажал мышку
+* mouseup - отпустил мышку
 * __click__
 >щелчек мыши
 * dblclick
