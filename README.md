@@ -218,6 +218,7 @@ if (solved) {
     console.log(suspect + " did it in the "+ room +" with the "+weapon+"!");
 }
 
+***
 
 # Lecture 10. DOM #
 
@@ -276,7 +277,9 @@ document.createElement('a');        //DOM method в () пишем тег, кот
 
 **Remove Page Content**
 
-.removeChild()          //требует вызывание родительского элемента и какой из элементов будем удалять
+.removeChild()          
+
+>требует вызывание родительского элемента и какой из элементов будем удалять
                         //<parent-element>.removeChild(<child-to-remove>);
                         посмотреть .firstChild или .firstElementChild и дальше удалить первого ребенка
                         const block = $0;
@@ -326,6 +329,8 @@ __Style Page Content__
                         .remove() - to remove a class from the list
                         .toggle() - to add the class if it doesn't exists or remove it from the list if it does already exist
                         .contains() - returns a boolean based on if the class exists in the list or not
+
+***
 
 # DOM_part_2 #
 
@@ -383,15 +388,15 @@ Working with Browser Events
 
 ##### Чтоб JS записать вверху страницы и DOM все таки прогружился, можно сделать следущее #####
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="/css/styles.css" />
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          document.querySelector('footer').style.backgroundColor = 'purple';
-      });
-    </script>
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <link rel="stylesheet" href="/css/styles.css" />
+      <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('footer').style.backgroundColor = 'purple';
+            });
+      </script>
 
 
 **performance.now()** - testing Code Performanc, тест времени выполнения кода
