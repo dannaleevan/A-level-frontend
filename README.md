@@ -165,6 +165,89 @@ exapmle();
       donuts[i] += " hole";
       donuts[i] = donuts[i].toUpperCase();
 
+* Array.forEach() - перебирает каждый элемент array может принимать три параметра .forEach(element, index, and array){ } - это всегда функция !не создает новый array
+
+      var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+      function printDonuts(donut) {
+      donut += " hole";
+      donut = donut.toUpperCase();
+      console.log(donut);
+      });
+      donuts.forEach(printDonuts);
+
+      можно записать как 
+
+      donuts.forEach(function(donut) {
+      donut += " hole";
+      donut = donut.toUpperCase();
+      console.log(donut);
+      });
+
+       можно записать как 
+
+      donuts.forEach((donut) => {
+      donut += " hole";
+      donut = donut.toUpperCase();
+      console.log(donut);
+      });
+
+
+
+      words = ["cat", "in", "hat"];
+      words.forEach(function(word, num, all) {
+      console.log("Word " + num + " in " + all.toString() + " is " + word);
+      });
+      Prints:
+      Word 0 in cat,in,hat is cat
+      Word 1 in cat,in,hat is in
+      Word 2 in cat,in,hat is hat
+
+
+      Use the existing `test` variable and write a `forEach` loop
+      that adds 100 to each number that is divisible by 3.
+
+      var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
+
+      test.forEach(function(elem,index){
+      if(elem%3===0){
+      test[index] = test[index]+100;
+            }
+      });
+      console.log(test);
+
+* Array.map(fanc) - в отличии от forEach создает новый array
+
+      var bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
+      //умножить каждое число на 15% и нужно округлить к 2 знакам после запятой
+     
+      const totals = bills.map((elem) => {
+            elem *= 1.15;
+            elem = elem.toFixed(2);        //toFixed(2) - десятки после кома привести к 2м знакам
+            elem = Number (elem);         //получается результат в строках, по этому нужно привести к номеру
+            return elem;
+      });
+      console.log(totals);
+
+* toFixed() - число с десятками приведет к необходимому количеству знаков после комы, указать в скобках сколько знаков (), приведет к String вместо Number,  10.89203.toFixed(2) => '10.89' => Number('10.89')=>10.89 - метод Number приведет String в Number
+
+* Arrays in array
+
+      Перебрать каждый элеммент array
+      var numbers = [
+      [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
+      [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],
+      [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
+      ];
+
+      for (let a = 0; a < numbers.length; a++) {
+      for (let b = 0; b < numbers[a].length; b++) {
+      console.log(numbers[a][b]);
+      }
+      }
+
+      
+      
+
 ***
 
 # Lecture 8. Function #
