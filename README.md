@@ -122,6 +122,51 @@ exapmle();
 
 ***
 
+# Lecture 7. Array #
+
+## Array properties and methods ##
+
+* Array.length() - длинна массива
+* Array.push() - закидывает элемент в конце array
+* Array.pop() - отнимает последний элемент
+* Array.reverse() - переставляет элементы array в обратном порядке
+* Array.sort() - переставляет элементы array в обратном порядке
+* Array.shift() - удаляет элемент в началле arr
+* Array.unshift() - прибавляет первый элемент
+* Array.splice() - принимает 2 аргумента: 1-й какой элемент отнимает (начинаем) 2-й сколько отнимем, можно еще 3, 4 аргю - чтоб добавить что-то (2-й арг. при этом будет - 0), если будем писать минусом -(index), отнимать будет с концаж; возвращает элементы, которые отнял, если arr.(2,0, 'yp', 'po') - то ПОСЛЕ второго добавит 2 элемента
+
+      var rainbow = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"];
+      var rainbow = ['Red', 'Orange', 'Blackberry', 'Blue'];
+      rainbow.splice(2, 1, "Yellow", "Green");
+      rainbow.splice(5, 0, "Purple");
+
+      QUIZ REQUIREMENTS
+      Your code should have a function `hasEnoughPlayers()`
+      Your function `hasEnoughPlayers()` should accept one parameter
+      Your function `hasEnoughPlayers()` should return the expected output - a Boolean value - true or false
+      Return true if the array size is atleast 7, otherwise false. 
+      
+      var team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+      function hasEnoughPlayers(arg) {
+      if (arg.length >= 7) {
+            return true;
+      } else {
+            return false;}
+      }
+      console.log(hasEnoughPlayers(team));
+
+* Array.sort() - сортирует по порядку алфавиту
+* Array.join() - соединяет array в строку
+* Array.toUpperCase() 
+
+      var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
+      // the variable `i` is used to step through each element in the array
+      for (var i = 0; i < donuts.length; i++) {
+      donuts[i] += " hole";
+      donuts[i] = donuts[i].toUpperCase();
+
+***
+
 # Lecture 8. Function #
 
 *1.Function creating & running*
