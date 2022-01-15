@@ -243,10 +243,7 @@ exapmle();
       for (let b = 0; b < numbers[a].length; b++) {
       console.log(numbers[a][b]);
       }
-      }
-
-      
-      
+      }      
 
 ***
 
@@ -551,3 +548,18 @@ Working with Browser Events
 **reateDocumentFragment()** - метод который поможет без div добавить элемент в одночасье и съэкономить время загрузки, он будет только на 321 строке
 
 **setTimeout()** - Оттерминование запуска функции 
+
+***
+
+# Lecture 11. Dom. Part 3 #
+
+## Events##
+
+### Document_(browser)_events ###
+* **document.addEventListener.DOMContentLoaded(callcack)** - прогружает сначала страницу HTML, а потом загружает скрипты
+* **document.addEventListener.load(callcack)** - прогружает сначала страницу HTML, а потом загружает скрипты
+* **window.addEventListener(resize,callcack)** - изменение размера браузера
+* skroll
+* beforeunload/unload
+* copy/cut/paste
+* onlime, offline
