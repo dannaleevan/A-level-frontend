@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        nav {
+        padding: 20px;
+        background-color: blueviolet;
+        }
+        ul{
+            padding: 20px;
+            background-color:navajowhite;
+        }
+        li{
+            background-color:hotpink;
+            padding: 20px;
+        }
+        span {
+            background-color: darkturquoise;
+            padding: 20px;
+        }
+        .tooltip{
+                background-color:paleturquoise;
+                position: absolute;
+                top:0;
+                left:0;
+        }
+        .p{
+            background-color: rebeccapurple;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <title>Class_10</title>
+</head>
+<body>
+    <button class='buttons button-red' id="test-id">My button</button>
+    <button class='buttons' id="btn-cansel">Cancel</button>
+    <div class='buttons'>hi</div>
+    <ul class='list'>
+    </ul>
+    <nav class="nav">
+        <ul>
+            <li><span id='link-home'>home</span></li>
+            <li><span id='link-pictures'>pictures</span></li>
+            <li><span id='link-about'>about</span></li>
+        </ul>
+    </nav>
+    <form class="form" action="">
+        <input type="text" id="field" placeholder="enter your name">
+        <input type="number" id="input" placeholder="Numbers>= 5">
+        <div id="form">
+            Form
+            <p id="p" class="p">P</p>
+        </div>
+    </form>
+    <p><a href="//google.com" id="link">LinkGoogle</a></p>
+    <p class='tooltip' id="tooltip" hidden >Hello World</p>
+    <a href="//google.com"><button id="clicked"> Hi, I am button</button></a>
+    <script src="./main.js"></script>
+</body>
+</html>
