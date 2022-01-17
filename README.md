@@ -157,7 +157,21 @@ exapmle();
 
 * Array.sort() - сортирует по порядку алфавиту
 * Array.join() - соединяет array в строку
-* Array.toUpperCase() 
+* Array.concat() - присоеденить один array к другому let arr3 = arr1.concat(arr2)
+* Array.slice() - вырезать кусок (1,2) - индекс 1 два куска вырезать
+* Array.includes() - что-то вмещает true/false
+* Array.find() - function - arr.find((element, index) => elem % 4 == 0) //8
+* Array.some() - function - arr.some((element, index) => elem % 4 == 0) //true
+* Array.every() - function - arr.every((element, index) => elem % 4 == 0) //false
+* Array.sort() - расставляет по порядку - function - arr.sort((element1, element2) => element1 - element2) //выставит по порядку
+* Array.reduce() - уменьшить принимает три параметра (previous value, current value, index) => previous value+current value, 0 - начинать с (прибавит все цифры) 
+* **Array.filter()** - сортирует - function - создает новый массив с прошедшими проверку элементами
+
+      let arr = [1,3,4,5,6,20];
+      let resylt = arr.filter((element, index) => element >10);
+      console.log(result); //20
+
+* **Array.toUpperCase()**
 
       var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
       // the variable `i` is used to step through each element in the array
@@ -165,7 +179,7 @@ exapmle();
       donuts[i] += " hole";
       donuts[i] = donuts[i].toUpperCase();
 
-* Array.forEach() - перебирает каждый элемент array может принимать три параметра .forEach(element, index, and array){ } - это всегда функция !не создает новый array
+* **Array.forEach()** - перебирает каждый элемент array может принимать три параметра .forEach(element, index, and array){ } - это всегда функция !не создает новый array
 
       var donuts = ["jelly donut", "chocolate donut", "glazed donut"];
       function printDonuts(donut) {
@@ -215,7 +229,7 @@ exapmle();
       });
       console.log(test);
 
-* Array.map(fanc) - в отличии от forEach создает новый array
+* **Array.map(fanc)** - в отличии от forEach создает новый array
 
       var bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
       //умножить каждое число на 15% и нужно округлить к 2 знакам после запятой
@@ -230,7 +244,7 @@ exapmle();
 
 * toFixed() - число с десятками приведет к необходимому количеству знаков после комы, указать в скобках сколько знаков (), приведет к String вместо Number,  10.89203.toFixed(2) => '10.89' => Number('10.89')=>10.89 - метод Number приведет String в Number
 
-* Arrays in array
+* **Arrays in array**
 
       Перебрать каждый элеммент array
       var numbers = [
@@ -244,6 +258,8 @@ exapmle();
       console.log(numbers[a][b]);
       }
       }      
+
+> String.split([separator[, limit]]) - разделяет строку отпределенным элементом и приводит в массив
 
 ***
 
