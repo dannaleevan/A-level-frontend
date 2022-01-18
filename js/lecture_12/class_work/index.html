@@ -6,20 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
     <form action="">
-        <input type="text">
+        <input  type="text">
         <p>Please fill me</p>
         <br>
         <br>
-        <input type="text">
+        <input  type="text">
         <br>
         <br>
         <button>Submit</button>
     </form>
     <form action="">
-        <input type="password" minlength="8" maxlength="10" required>
-        <input type="text" placeholder="optional" pattern="[0-9] {1,}">
-        <button>Save</button>
+        <p id="field1-error" class='hidden'>Fill form</p>
+        <input id="input1" type="password" minlength="8" maxlength="10" required placeholder="its me">
+        <input id="input2" type="text" placeholder="optional" pattern="[0-9] {1,}" aria-placeholder="and me">
+        <button id='save'>Save</button>
     </form>
+    <img src="https://img3.akspic.ru/originals/3/3/0/7/6/167033-postrojki_1245953_1920-zdanie-okno-purpur-avtomobilnoe_osveshhenie-3840x2160.jpg" >
+
+    <form name="formName" action="todo" method="POST">
+        <input name="userName" placeholder="name">
+        <input type="password" name="password" placeholder="password">
+        <button type="submit">Save</button>
+        <button type="reset">Reset</button>
+    </form>
+    <form name='testForm'action="">
+        <input name="login"  placeholder="login" type="text">
+        <input name="password" placeholder="password" type="password">
+        <button type="sibmit">Submit</button>
+        <button type="reser">Reset</button>
+    </form>
+
     <script src="./main.js"></script>
 </body>
 </html>

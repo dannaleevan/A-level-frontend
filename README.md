@@ -572,13 +572,89 @@ Working with Browser Events
 ## Events##
 
 ### Document_(browser)_events ###
-* **document.addEventListener.DOMContentLoaded(callcack)** - прогружает сначала страницу HTML, а потом загружает скрипты
-* **document.addEventListener.load(callcack)** - прогружает сначала страницу HTML, а потом загружает скрипты
-* **window.addEventListener(resize,callcack)** - изменение размера браузера
-* skroll
-* beforeunload/unload
-* copy/cut/paste
-* online, offline
+> Можно присваивать widow или document
+* **.DOMContentLoaded** - document.addEventListener ('DOMContentLoaded'(callcack))** - срабоает тогда, когда прогрузится весь HTML, а потом загружает скрипты
+* **.load** - window.addEventListener.('load' (callcack)) - прогружает сначала страницу HTML, а потом загружает скрипты
+* **.resize** - window.addEventListener('resize', (callcack)) - получаем ведомости об изменение ширины/высоты размера браузера или окна
+
+      const heightOutput = document.querySelector('#height');
+      const widthOutput = document.querySelector('#width');
+
+      function reportWindowSize() {
+      heightOutput.textContent = window.innerHeight;
+      widthOutput.textContent = window.innerWidth;
+      }
+
+      window.addEventListener('resize', reportWindowSize);
+
+* **skroll** - window.addEventListener('skroll', (callcack)) срабатывает, когда чел. скролит страницу
+* **beforeunload/unload** - window.addEventListener('beforeunload', (callcack))переходим между вкладками
+* **copy/cut/paste** - когда пользователь копирует, вырезает const exs = document.getSelection() или getData()- это свойство отображает кусочек, который мы скопировали
+
+      const source = document.querySelector('div.source');
+      const target = document.querySelector('div.target');
+
+
+      source.addEventListener('copy', (event) => {
+      const selection = document.getSelection();
+      
+      event.clipboardData.setData('text/plain', selection.toString().toUpperCase());
+      event.preventDefault();
+      });
+
+      source.addEventListener('cut', (event) => {
+      const selection = document.getSelection();      //кусочек, который скопирован
+      
+      console.log(selection.toString());
+      });
+
+      target.addEventListener('paste', (event) => {
+            const paste = event.clipboardData.getData('text/plain');
+      
+            console.log(paste);
+      })
+
+* **online, offline** - можно показать человеку, что у него пропал интернет (есть пример в лекции)
+
+### Control Event###
+
+* **focus** - на каком элементе фокус
+* **blur** - потеря фокуса
+
+### Working with form ###
+
+#### Form object props #####
+* **name**
+* **action** - адрес отправки
+* **method**
+* **novalidate**
+* **elements**
+* **lendth**
+
+* name="form1" - в HTML *писать ID не обязательно*, достаточно присвоить атрибут имя форме
+* document.forms.name - *достучатся до формы* HTML с помощью JS
+
+      const form1 = document.forms.formName;
+      const form2 = document.querySelector('form[name=formName]');
+      console.log(form1.name);  //можем вызвать через . любой атрибут c *Form object props*
+
+### Form methods ###
+* **submit()**
+
+>достать поле input, у которого есть name
+
+      form1.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const inputUserName = e.target.userName;   //получаем в консоль ссылку на это поле
+      const inputPassword = e.target.password;    //вызываем password
+
+      console.log(inputUserName);
+      console.log(inputUserName.value);      // выдает, что введено в поле
+      console.log(inputPassword.value);      // выдает, что введено в поле
+      e.target.reset();                        //тут же стереть после отправки
+      });
+
+* **reset()** -  тот же самы пример, что и ресет
 
 ### Form Validation ###
 * **checkValidity** - если стоит requaerd, то мы должны заполнить полностью форму true -валидная форма
