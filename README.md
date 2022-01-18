@@ -578,4 +578,17 @@ Working with Browser Events
 * skroll
 * beforeunload/unload
 * copy/cut/paste
-* onlime, offline
+* online, offline
+
+### Form Validation ###
+* **checkValidity** - если стоит requaerd, то мы должны заполнить полностью форму true -валидная форма
+* **reportValidity** - выдает о невалидности формы
+
+#### ValidityState Object ####
+* **inputElement.validity.[state name]** - что именно в нашем обекте не валидно
+> valueMissing
+> patternMissing
+> tooLong
+> tooShort
+> valid
+>customError 
