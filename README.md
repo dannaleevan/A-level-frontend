@@ -1,6 +1,5 @@
 # A-level-frontend
 
-
 # Lecture 2 Variables in JS #
 
 ES5: var //var не имеет блочной области видимости
@@ -21,8 +20,6 @@ Example: let lectureNumber = 2;
 локальная или функциональная (переменная или функция, созданная в этой области видимости, может быть доступна только внутри неё);
 блочная область видимости (if ();)
 
-***
-
 # Lecture 3 JavaScript data types #
 
 Primitive values (immutable datum represented directly at the lowest level of the language)
@@ -38,27 +35,30 @@ _Objects_ (collections of properties)
 
 ***
 
-# Lecture 4. Operators & Type Coercion #
+# Lecture 4. Operators & Type Coercion
 
 __Operators__
 
 JavaScript has the following types of operators. This section describes the operators and contains information about operator precedence.
 
 *Assignment operators*
-=, +=
+`=`, `+=`
 
 *Comparison operators* 
-===,!==>, <, >=, <=
+`===`,`!==`, `>`, `<`, `>=`, `<=`
 
 *Arithmetic operators*
-+, -, *, /
+`+`, `-`, `*`, `/`
 
 *Logical operators*
-
+```
 Operator	Meaning	      Example	      How it works
 &&	       AND	      value1 && value2	      Returns true if both value1 and value2 evaluate to true.
 ||	       OR	      value1 || value2	      Returns true if either value1 or value2 (or even both!) evaluates to true.
 !	       NOT	      !value1	            Returns the opposite of value1. If value1 is true, then !value1 is false.
+```
+
+String operators
 
 var balance = 340.00;
 var checkBalance = true;
@@ -82,9 +82,11 @@ if (checkBalance === true){
 *Conditional (ternary) operator*
 Условный (тернарный) оператор - единственный оператор в JavaScript, принимающий три операнда: condition - условие, за которым следует знак вопроса (?), затем выражение, которое выполняется, если условие true истинно, сопровождается двоеточием (:), и, наконец, выражение, которое выполняется, если условие false - ложно. Он часто используется в качестве укороченного варианта условного оператора if.
 
+```js
 function getFee(isMember) {
   return (isMember ? '$2.00' : '$10.00');       //isMember - condition , true - 2$, false - 10$
 } console.log(getFee(true));                    // expected output: "$2.00"
+```
 
 var flavor = "chocolate";
 var vessel = "bowl";
