@@ -670,3 +670,36 @@ Working with Browser Events
 > tooShort
 > valid
 >customError 
+
+***
+
+## Object oriented programing ##
+
+* **Encapsulation**
+* **Abstraction**
+* **Polymorphism**
+* **Inheritance**
+
+#### Classes ####
+
+      function Car (mark, model, year = null) {
+            this.mark = mark;
+            this.model = model;
+            this.year = year;
+      }
+
+      Car.prototype.setYear = function (year) {
+            this.year = year;
+      }
+
+      Car.prototype.getInformation = function () {
+            return `${this.mar} ${this.model}, ${this.year}`;
+      };
+
+      let obj = new Car('Audi','S8');
+
+      obj.setYear(2020);
+
+      console.log(obj.getInformation());  //Audi S8, 2020
+
+
