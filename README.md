@@ -702,4 +702,33 @@ Working with Browser Events
 
       console.log(obj.getInformation());  //Audi S8, 2020
 
+***
 
+## Advanced JS##
+
+### Date methods###
+
+      const currentDate = new Date();
+      console.log(currentDate.getTime());
+
+* **getTime()**
+* 
+*
+
+### Local session Storages ###
+
+* localStorage - хранить можно только String, для хранения данных какое-то время
+* sessionStorage - хранение данных только во время сессии
+
+#### Storage methods ####
+
+* setItem()
+* getItem()
+* removeItem()
+
+### Timers ###
+
+* setTimeout(arg1, arg2) - arg1 = какую функц исп, arg2 - сколько времени задержки
+* clearTimeout() - нужно сохранять в переменную
+* setInterval(arg1, arg2) arg1 - задать функцию,  arg2 - сколько времени задержки до выполнения новой проходки
+* clearInterval() - нужно сохранять в переменную
